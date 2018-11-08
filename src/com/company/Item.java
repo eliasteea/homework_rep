@@ -7,8 +7,6 @@ public class Item {
     double price;
 
     public Item(String name,double price){
-        this.name=name;
-        this.price = price;
     }
 
     public void displayDetail(){
