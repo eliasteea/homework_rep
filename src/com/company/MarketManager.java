@@ -5,6 +5,13 @@ import java.util.Collections;
 
 public class MarketManager {
 
+    static Item mostExpensive(Market market) {
+        Item result = market.items[0];
+        return result;
+    }
+
+
+
     static double ExpensItem(Market market){
         double maxValue = market.items[0].price;
         for(int i=1;i < market.items.length;i++){
@@ -23,7 +30,10 @@ public class MarketManager {
     }
 
     static void  Replacing(Market market, Item item, int position){
+        market.items[position] = item;
     }
 
 }
+
+
 
